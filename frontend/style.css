@@ -1,0 +1,556 @@
+.p-inici-de-la {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: var(--cinereserva-color-fons);
+}
+
+.p-inici-de-la .capalera-visitant {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--cinereserva-espai-16) var(--cinereserva-espai-48)
+    var(--cinereserva-espai-16) var(--cinereserva-espai-48);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--cinereserva-color-superficie);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--cinereserva-color-vora);
+}
+
+.p-inici-de-la .esquerra {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cinereserva-espai-48);
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.p-inici-de-la .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.p-inici-de-la .icon-clapperboard {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.p-inici-de-la .vector {
+  position: absolute;
+  width: 95.74%;
+  height: 95.74%;
+  top: 4.26%;
+  left: 4.26%;
+}
+
+.p-inici-de-la .img {
+  position: absolute;
+  width: 78.33%;
+  height: 82.08%;
+  top: 17.92%;
+  left: 21.67%;
+}
+
+.p-inici-de-la .vector-2 {
+  position: absolute;
+  width: 52.50%;
+  height: 90.00%;
+  top: 10.00%;
+  left: 47.50%;
+}
+
+.p-inici-de-la .vector-3 {
+  position: absolute;
+  width: 91.67%;
+  height: 58.33%;
+  top: 41.67%;
+  left: 8.33%;
+}
+
+.p-inici-de-la .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Merriweather-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--cinereserva-color-blanc);
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.p-inici-de-la .navegaci {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--cinereserva-espai-32);
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.p-inici-de-la .enlla-inici {
+  color: var(--cinereserva-color-accent);
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--bot-font-family);
+  font-weight: var(--bot-font-weight);
+  font-size: var(--bot-font-size);
+  letter-spacing: var(--bot-letter-spacing);
+  line-height: var(--bot-line-height);
+  white-space: nowrap;
+  font-style: var(--bot-font-style);
+}
+
+.p-inici-de-la .enlla-cartellera {
+  color: var(--cinereserva-color-text);
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--bot-font-family);
+  font-weight: var(--bot-font-weight);
+  font-size: var(--bot-font-size);
+  letter-spacing: var(--bot-letter-spacing);
+  line-height: var(--bot-line-height);
+  white-space: nowrap;
+  font-style: var(--bot-font-style);
+}
+
+.p-inici-de-la .accions {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--cinereserva-espai-16);
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -1.5px;
+  margin-bottom: -0.5px;
+}
+
+.p-inici-de-la .etiqueta-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px var(--cinereserva-espai-24) 12px var(--cinereserva-espai-24);
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: var(--cinereserva-radi-petit);
+  border: 1px solid;
+  border-color: var(--cinereserva-color-text);
+}
+
+.p-inici-de-la .etiqueta {
+  position: relative;
+  width: fit-content;
+  font-family: var(--bot-font-family);
+  font-weight: var(--bot-font-weight);
+  color: var(--cinereserva-color-text);
+  font-size: var(--bot-font-size);
+  letter-spacing: var(--bot-letter-spacing);
+  line-height: var(--bot-line-height);
+  white-space: nowrap;
+  font-style: var(--bot-font-style);
+}
+
+.p-inici-de-la .div-wrapper {
+  display: inline-flex;
+  background-color: var(--cinereserva-color-primari);
+  align-items: center;
+  justify-content: center;
+  padding: 12px var(--cinereserva-espai-24) 12px var(--cinereserva-espai-24);
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: var(--cinereserva-radi-petit);
+}
+
+.p-inici-de-la .div {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--bot-font-family);
+  font-weight: var(--bot-font-weight);
+  color: var(--cinereserva-color-blanc);
+  font-size: var(--bot-font-size);
+  letter-spacing: var(--bot-letter-spacing);
+  line-height: var(--bot-line-height);
+  white-space: nowrap;
+  font-style: var(--bot-font-style);
+}
+
+.p-inici-de-la .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 80px 48px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--cinereserva-color-superficie);
+}
+
+.p-inici-de-la .text-wrapper-2 {
+  position: relative;
+  width: 800px;
+  margin-top: -1px;
+  font-family: var(--h1-escriptori-font-family);
+  font-weight: var(--h1-escriptori-font-weight);
+  color: var(--cinereserva-color-blanc);
+  font-size: var(--h1-escriptori-font-size);
+  letter-spacing: var(--h1-escriptori-letter-spacing);
+  line-height: var(--h1-escriptori-line-height);
+  font-style: var(--h1-escriptori-font-style);
+}
+
+.p-inici-de-la .p {
+  position: relative;
+  width: 800px;
+  font-family: var(--cos-font-family);
+  font-weight: var(--cos-font-weight);
+  color: var(--cinereserva-color-text-descripcio);
+  font-size: var(--cos-font-size);
+  letter-spacing: var(--cos-letter-spacing);
+  line-height: var(--cos-line-height);
+  font-style: var(--cos-font-style);
+}
+
+.p-inici-de-la .frame-2 {
+  display: inline-flex;
+  gap: 16px;
+  padding: 8px 0px 0px;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.p-inici-de-la .frame-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px;
+  align-self: stretch;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.p-inici-de-la .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--h2-escriptori-font-family);
+  font-weight: var(--h2-escriptori-font-weight);
+  color: var(--cinereserva-color-blanc);
+  font-size: var(--h2-escriptori-font-size);
+  letter-spacing: var(--h2-escriptori-letter-spacing);
+  line-height: var(--h2-escriptori-line-height);
+  white-space: nowrap;
+  font-style: var(--h2-escriptori-font-style);
+}
+
+.p-inici-de-la .frame-4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 24px;
+  align-self: stretch;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.p-inici-de-la .targeta-pellcula {
+  display: flex;
+  flex-direction: column;
+  width: 318px;
+  align-items: flex-start;
+  position: relative;
+  background-color: var(--cinereserva-color-superficie);
+  border-radius: var(--cinereserva-radi-petit);
+  overflow: hidden;
+  box-shadow: var(--ombra-targeta);
+}
+
+.p-inici-de-la .cartell {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--cinereserva-color-vora);
+}
+
+.p-inici-de-la .icon-image {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.p-inici-de-la .vector-4 {
+  position: absolute;
+  width: 89.58%;
+  height: 89.58%;
+  top: 10.42%;
+  left: 10.42%;
+}
+
+.p-inici-de-la .vector-5 {
+  position: absolute;
+  width: 72.92%;
+  height: 72.92%;
+  top: 27.08%;
+  left: 27.08%;
+}
+
+.p-inici-de-la .vector-6 {
+  position: absolute;
+  width: 77.08%;
+  height: 54.88%;
+  top: 45.12%;
+  left: 22.92%;
+}
+
+.p-inici-de-la .contingut {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--cinereserva-espai-8);
+  padding: var(--cinereserva-espai-16);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.p-inici-de-la .t-tol {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--h3-escriptori-font-family);
+  font-weight: var(--h3-escriptori-font-weight);
+  color: var(--cinereserva-color-blanc);
+  font-size: var(--h3-escriptori-font-size);
+  letter-spacing: var(--h3-escriptori-letter-spacing);
+  line-height: var(--h3-escriptori-line-height);
+  font-style: var(--h3-escriptori-font-style);
+}
+
+.p-inici-de-la .metadades {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--cinereserva-espai-8);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.p-inici-de-la .durada-i-g-nere {
+  position: relative;
+  width: fit-content;
+  font-family: var(--petit-escriptori-font-family);
+  font-weight: var(--petit-escriptori-font-weight);
+  color: var(--cinereserva-color-text-secundari);
+  font-size: var(--petit-escriptori-font-size);
+  letter-spacing: var(--petit-escriptori-letter-spacing);
+  line-height: var(--petit-escriptori-line-height);
+  white-space: nowrap;
+  font-style: var(--petit-escriptori-font-style);
+}
+
+.p-inici-de-la .edat {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 2px 8px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--cinereserva-color-accent);
+}
+
+.p-inici-de-la .classificaci {
+  position: relative;
+  width: fit-content;
+  font-family: var(--etiqueta-font-family);
+  font-weight: var(--etiqueta-font-weight);
+  color: var(--cinereserva-color-accent);
+  font-size: var(--etiqueta-font-size);
+  letter-spacing: var(--etiqueta-letter-spacing);
+  line-height: var(--etiqueta-line-height);
+  white-space: nowrap;
+  font-style: var(--etiqueta-font-style);
+}
+
+.p-inici-de-la .bot {
+  display: flex;
+  align-self: stretch;
+  width: 100%;
+  border: 1px solid;
+  border-color: var(--cinereserva-color-text);
+  align-items: center;
+  justify-content: center;
+  padding: 12px var(--cinereserva-espai-24) 12px var(--cinereserva-espai-24);
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: var(--cinereserva-radi-petit);
+}
+
+.p-inici-de-la .peu-de-pgina {
+  display: flex;
+  width: 1440px;
+  height: 80px;
+  align-items: center;
+  gap: var(--cinereserva-espai-16);
+  padding: var(--cinereserva-espai-32) var(--cinereserva-espai-48)
+    var(--cinereserva-espai-32) var(--cinereserva-espai-48);
+  position: relative;
+  background-color: var(--cinereserva-color-superficie);
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: var(--cinereserva-color-vora);
+}
+
+.p-inici-de-la .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -2.5px;
+  margin-bottom: -1.5px;
+  font-family: var(--petit-escriptori-font-family);
+  font-weight: var(--petit-escriptori-font-weight);
+  color: var(--cinereserva-color-text-secundari);
+  font-size: var(--petit-escriptori-font-size);
+  letter-spacing: var(--petit-escriptori-letter-spacing);
+  line-height: var(--petit-escriptori-line-height);
+  white-space: nowrap;
+  font-style: var(--petit-escriptori-font-style);
+}
+
+.p-inici-de-la .enllaos {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--cinereserva-espai-24);
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -1.5px;
+  margin-bottom: -2.5px;
+}
+
+.p-inici-de-la .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--petit-escriptori-font-family);
+  font-weight: var(--petit-escriptori-font-weight);
+  color: var(--cinereserva-color-text-descripcio);
+  font-size: var(--petit-escriptori-font-size);
+  letter-spacing: var(--petit-escriptori-letter-spacing);
+  line-height: var(--petit-escriptori-line-height);
+  white-space: nowrap;
+  font-style: var(--petit-escriptori-font-style);
+}
+/* Inject after the existing style.css rules. */
+
+.p-inici-de-la a {
+  color: inherit;
+}
+
+.p-inici-de-la a:focus-visible {
+  outline: 2px solid var(--cinereserva-color-accent);
+  outline-offset: 3px;
+}
+
+.p-inici-de-la .logo {
+  text-decoration: none;
+}
+
+.p-inici-de-la .div-wrapper,
+.p-inici-de-la .etiqueta-wrapper,
+.p-inici-de-la .bot {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.p-inici-de-la .div-wrapper:hover,
+.p-inici-de-la .bot:hover {
+  background-color: var(--cinereserva-color-primari-hover);
+}
+
+.p-inici-de-la .etiqueta-wrapper:hover {
+  border-color: var(--cinereserva-color-accent);
+}
+
+.p-inici-de-la .bot:hover .etiqueta,
+.p-inici-de-la .div-wrapper:hover .div {
+  color: var(--cinereserva-color-blanc);
+}
+
+@media (max-width: 900px) {
+  .p-inici-de-la .capalera-visitant,
+  .p-inici-de-la .frame,
+  .p-inici-de-la .frame-3 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .p-inici-de-la .text-wrapper-2,
+  .p-inici-de-la .p {
+    width: min(800px, 100%);
+  }
+
+  .p-inici-de-la .targeta-pellcula {
+    width: calc(50% - 12px);
+  }
+
+  .p-inici-de-la .peu-de-pgina {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .p-inici-de-la .capalera-visitant {
+    height: auto;
+    min-height: 72px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .p-inici-de-la .esquerra {
+    gap: 24px;
+  }
+
+  .p-inici-de-la .accions {
+    width: 100%;
+    margin: 0;
+  }
+
+  .p-inici-de-la .targeta-pellcula {
+    width: 100%;
+  }
+
+  .p-inici-de-la .peu-de-pgina {
+    height: auto;
+    min-height: 80px;
+    flex-wrap: wrap;
+  }
+
+  .p-inici-de-la .enllaos {
+    flex-wrap: wrap;
+  }
+}
