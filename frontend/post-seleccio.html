@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineReserva | Revisió de seients</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- P-10 Post-selecció de seients · escriptori -->
+  <header class="capcalera">
+    <div class="capcalera__esquerra">
+      <a class="logo" href="index.html" aria-label="CineReserva, inici">
+        <img src="img/icon-clapperboard.svg" width="24" height="24" alt="">
+        <span class="logo__text">CineReserva</span>
+      </a>
+      <nav class="nav" aria-label="Navegació principal">
+        <a href="index.html">Inici</a>
+        <a href="cartellera.html" aria-current="page">Cartellera</a>
+        <a href="perfil.html">Les meves reserves</a>
+      </nav>
+    </div>
+    <div class="usuari">
+      <a class="avatar" href="perfil.html" aria-label="El meu perfil"><img src="img/icon-user.svg" width="20" height="20" alt=""></a>
+      <a class="usuari__nom" href="perfil.html">Ian Membrive</a>
+      <a class="tanca-sessio" href="index.html"><img src="img/icon-log-out.svg" width="16" height="16" alt=""> Tanca sessió</a>
+    </div>
+  </header>
+
+  <main class="contingut pila gap-32">
+    <nav class="breadcrumb" aria-label="Ruta de navegació"><a href="seients.html">Seients</a> &gt; Revisió &gt; Pagament</nav>
+    <div class="pila gap-16 bloc-760">
+      <h1 class="h2">Seients reservats per a tu</h1>
+      <p class="text">Els seients es mantenen reservats durant 10 minuts. Temps restant: 09:42</p>
+      <div class="barra-progres" role="progressbar" aria-valuemin="0" aria-valuemax="600" aria-valuenow="582" aria-label="Temps restant"><span style="width: 97%;"></span></div>
+
+      <section class="panell amplada-total" style="gap: 16px;">
+        <h2 class="h3">El darrer projeccionista · Dissabte 31/10 18:30 · Sala 3</h2>
+        <div class="taula-wrapper amplada-total">
+          <table class="taula">
+            <thead>
+              <tr><th style="width:120px">Seient</th><th style="width:260px">Tipus</th><th style="width:120px">Preu</th><th>Acció</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>A6</td><td>Estàndard</td><td>8,50 €</td><td><a class="enllac" href="seients.html">Treu</a></td></tr>
+              <tr><td>A7</td><td>Adaptat (accessible)</td><td>8,50 €</td><td><a class="enllac" href="seients.html">Treu</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="h3 total">Total: 17,00 €</p>
+      </section>
+
+      <div class="fila">
+        <a class="btn btn--secundari" href="seients.html">Afegeix més seients</a>
+        <a class="btn btn--primari" href="pagament.html">Continua al pagament</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="peu">
+    <span class="peu__copy">© 2026 CineReserva</span>
+    <nav class="peu__enllacos" aria-label="Enllaços legals">
+      <a href="#">Avís legal</a>
+      <a href="#">Privacitat</a>
+      <a href="#">Contacte</a>
+    </nav>
+  </footer>
+</body>
+</html>

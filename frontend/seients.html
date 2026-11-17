@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineReserva | Selecció de seients</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- P-03 Selecció de seients · escriptori -->
+  <header class="capcalera">
+    <div class="capcalera__esquerra">
+      <a class="logo" href="index.html" aria-label="CineReserva, inici">
+        <img src="img/icon-clapperboard.svg" width="24" height="24" alt="">
+        <span class="logo__text">CineReserva</span>
+      </a>
+      <nav class="nav" aria-label="Navegació principal">
+        <a href="index.html">Inici</a>
+        <a href="cartellera.html" aria-current="page">Cartellera</a>
+        <a href="perfil.html">Les meves reserves</a>
+      </nav>
+    </div>
+    <div class="usuari">
+      <a class="avatar" href="perfil.html" aria-label="El meu perfil"><img src="img/icon-user.svg" width="20" height="20" alt=""></a>
+      <a class="usuari__nom" href="perfil.html">Ian Membrive</a>
+      <a class="tanca-sessio" href="index.html"><img src="img/icon-log-out.svg" width="16" height="16" alt=""> Tanca sessió</a>
+    </div>
+  </header>
+
+  <main class="contingut dues-columnes">
+    <div class="principal pila gap-24">
+      <nav class="breadcrumb" aria-label="Ruta de navegació">
+        <a href="index.html">Inici</a> &gt; <a href="cartellera.html">Cartellera</a> &gt; <a href="pellicula.html">El darrer projeccionista</a> &gt; Seients
+      </nav>
+      <h1 class="h2">Tria els teus seients</h1>
+
+      <div class="sala">
+        <div class="pantalla">PANTALLA</div>
+        <div class="files">
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient seient--adaptat" type="button" aria-label="A1 adaptat"><img src="img/seat-adapted.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--adaptat" type="button" aria-label="A2 adaptat"><img src="img/seat-adapted.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--adaptat" type="button" aria-label="A3 adaptat"><img src="img/seat-adapted.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="A4 lliure"></button>
+            <button class="seient" type="button" aria-label="A5 lliure"></button>
+            <button class="seient seient--seleccionat" type="button" aria-label="A6 seleccionat" aria-pressed="true"><img src="img/seat-selected.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--seleccionat" type="button" aria-label="A7 seleccionat" aria-pressed="true"><img src="img/seat-selected.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="A8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient" type="button" aria-label="A9 lliure"></button>
+            <button class="seient" type="button" aria-label="A10 lliure"></button>
+            <button class="seient" type="button" aria-label="A11 lliure"></button>
+            <button class="seient" type="button" aria-label="A12 lliure"></button>
+            <button class="seient" type="button" aria-label="A13 lliure"></button>
+            <button class="seient seient--adaptat" type="button" aria-label="A14 adaptat"><img src="img/seat-adapted.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--adaptat" type="button" aria-label="A15 adaptat"><img src="img/seat-adapted.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--adaptat" type="button" aria-label="A16 adaptat"><img src="img/seat-adapted.svg" width="16" height="16" alt=""></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient" type="button" aria-label="B1 lliure"></button>
+            <button class="seient" type="button" aria-label="B2 lliure"></button>
+            <button class="seient" type="button" aria-label="B3 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="B4 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--ocupat" type="button" aria-label="B5 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="B6 lliure"></button>
+            <button class="seient" type="button" aria-label="B7 lliure"></button>
+            <button class="seient" type="button" aria-label="B8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient" type="button" aria-label="B9 lliure"></button>
+            <button class="seient" type="button" aria-label="B10 lliure"></button>
+            <button class="seient" type="button" aria-label="B11 lliure"></button>
+            <button class="seient" type="button" aria-label="B12 lliure"></button>
+            <button class="seient" type="button" aria-label="B13 lliure"></button>
+            <button class="seient" type="button" aria-label="B14 lliure"></button>
+            <button class="seient" type="button" aria-label="B15 lliure"></button>
+            <button class="seient" type="button" aria-label="B16 lliure"></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient" type="button" aria-label="C1 lliure"></button>
+            <button class="seient" type="button" aria-label="C2 lliure"></button>
+            <button class="seient" type="button" aria-label="C3 lliure"></button>
+            <button class="seient" type="button" aria-label="C4 lliure"></button>
+            <button class="seient" type="button" aria-label="C5 lliure"></button>
+            <button class="seient" type="button" aria-label="C6 lliure"></button>
+            <button class="seient" type="button" aria-label="C7 lliure"></button>
+            <button class="seient" type="button" aria-label="C8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient seient--ocupat" type="button" aria-label="C9 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--ocupat" type="button" aria-label="C10 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--ocupat" type="button" aria-label="C11 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="C12 lliure"></button>
+            <button class="seient" type="button" aria-label="C13 lliure"></button>
+            <button class="seient" type="button" aria-label="C14 lliure"></button>
+            <button class="seient" type="button" aria-label="C15 lliure"></button>
+            <button class="seient" type="button" aria-label="C16 lliure"></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient" type="button" aria-label="D1 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="D2 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="D3 lliure"></button>
+            <button class="seient" type="button" aria-label="D4 lliure"></button>
+            <button class="seient" type="button" aria-label="D5 lliure"></button>
+            <button class="seient" type="button" aria-label="D6 lliure"></button>
+            <button class="seient" type="button" aria-label="D7 lliure"></button>
+            <button class="seient" type="button" aria-label="D8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient" type="button" aria-label="D9 lliure"></button>
+            <button class="seient" type="button" aria-label="D10 lliure"></button>
+            <button class="seient" type="button" aria-label="D11 lliure"></button>
+            <button class="seient" type="button" aria-label="D12 lliure"></button>
+            <button class="seient" type="button" aria-label="D13 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="D14 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="D15 lliure"></button>
+            <button class="seient" type="button" aria-label="D16 lliure"></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient seient--vip" type="button" aria-label="E1 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E2 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E3 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E4 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E5 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E6 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E7 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E8 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <span class="passadis"></span>
+            <button class="seient seient--vip" type="button" aria-label="E9 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E10 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E11 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E12 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E13 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E14 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E15 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="E16 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient seient--vip" type="button" aria-label="F1 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F2 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F3 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F4 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F5 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F6 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--ocupat" type="button" aria-label="F7 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--ocupat" type="button" aria-label="F8 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <span class="passadis"></span>
+            <button class="seient seient--vip" type="button" aria-label="F9 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F10 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F11 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F12 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F13 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F14 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F15 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--vip" type="button" aria-label="F16 VIP"><img src="img/seat-vip.svg" width="16" height="16" alt=""></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient" type="button" aria-label="G1 lliure"></button>
+            <button class="seient" type="button" aria-label="G2 lliure"></button>
+            <button class="seient" type="button" aria-label="G3 lliure"></button>
+            <button class="seient" type="button" aria-label="G4 lliure"></button>
+            <button class="seient" type="button" aria-label="G5 lliure"></button>
+            <button class="seient" type="button" aria-label="G6 lliure"></button>
+            <button class="seient" type="button" aria-label="G7 lliure"></button>
+            <button class="seient" type="button" aria-label="G8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient" type="button" aria-label="G9 lliure"></button>
+            <button class="seient" type="button" aria-label="G10 lliure"></button>
+            <button class="seient" type="button" aria-label="G11 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="G12 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="G13 lliure"></button>
+            <button class="seient" type="button" aria-label="G14 lliure"></button>
+            <button class="seient" type="button" aria-label="G15 lliure"></button>
+            <button class="seient" type="button" aria-label="G16 lliure"></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient" type="button" aria-label="H1 lliure"></button>
+            <button class="seient" type="button" aria-label="H2 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="H3 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--ocupat" type="button" aria-label="H4 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient seient--ocupat" type="button" aria-label="H5 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="H6 lliure"></button>
+            <button class="seient" type="button" aria-label="H7 lliure"></button>
+            <button class="seient" type="button" aria-label="H8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient" type="button" aria-label="H9 lliure"></button>
+            <button class="seient" type="button" aria-label="H10 lliure"></button>
+            <button class="seient" type="button" aria-label="H11 lliure"></button>
+            <button class="seient" type="button" aria-label="H12 lliure"></button>
+            <button class="seient" type="button" aria-label="H13 lliure"></button>
+            <button class="seient" type="button" aria-label="H14 lliure"></button>
+            <button class="seient" type="button" aria-label="H15 lliure"></button>
+            <button class="seient" type="button" aria-label="H16 lliure"></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient" type="button" aria-label="I1 lliure"></button>
+            <button class="seient" type="button" aria-label="I2 lliure"></button>
+            <button class="seient" type="button" aria-label="I3 lliure"></button>
+            <button class="seient" type="button" aria-label="I4 lliure"></button>
+            <button class="seient" type="button" aria-label="I5 lliure"></button>
+            <button class="seient" type="button" aria-label="I6 lliure"></button>
+            <button class="seient" type="button" aria-label="I7 lliure"></button>
+            <button class="seient" type="button" aria-label="I8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient" type="button" aria-label="I9 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="I10 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="I11 lliure"></button>
+            <button class="seient" type="button" aria-label="I12 lliure"></button>
+            <button class="seient" type="button" aria-label="I13 lliure"></button>
+            <button class="seient" type="button" aria-label="I14 lliure"></button>
+            <button class="seient" type="button" aria-label="I15 lliure"></button>
+            <button class="seient" type="button" aria-label="I16 lliure"></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient seient--ocupat" type="button" aria-label="J1 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="J2 lliure"></button>
+            <button class="seient" type="button" aria-label="J3 lliure"></button>
+            <button class="seient" type="button" aria-label="J4 lliure"></button>
+            <button class="seient" type="button" aria-label="J5 lliure"></button>
+            <button class="seient" type="button" aria-label="J6 lliure"></button>
+            <button class="seient" type="button" aria-label="J7 lliure"></button>
+            <button class="seient" type="button" aria-label="J8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient" type="button" aria-label="J9 lliure"></button>
+            <button class="seient" type="button" aria-label="J10 lliure"></button>
+            <button class="seient" type="button" aria-label="J11 lliure"></button>
+            <button class="seient" type="button" aria-label="J12 lliure"></button>
+            <button class="seient" type="button" aria-label="J13 lliure"></button>
+            <button class="seient" type="button" aria-label="J14 lliure"></button>
+            <button class="seient" type="button" aria-label="J15 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="J16 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient" type="button" aria-label="K1 lliure"></button>
+            <button class="seient" type="button" aria-label="K2 lliure"></button>
+            <button class="seient" type="button" aria-label="K3 lliure"></button>
+            <button class="seient" type="button" aria-label="K4 lliure"></button>
+            <button class="seient" type="button" aria-label="K5 lliure"></button>
+            <button class="seient" type="button" aria-label="K6 lliure"></button>
+            <button class="seient" type="button" aria-label="K7 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="K8 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <span class="passadis"></span>
+            <button class="seient seient--ocupat" type="button" aria-label="K9 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="K10 lliure"></button>
+            <button class="seient" type="button" aria-label="K11 lliure"></button>
+            <button class="seient" type="button" aria-label="K12 lliure"></button>
+            <button class="seient" type="button" aria-label="K13 lliure"></button>
+            <button class="seient" type="button" aria-label="K14 lliure"></button>
+            <button class="seient" type="button" aria-label="K15 lliure"></button>
+            <button class="seient" type="button" aria-label="K16 lliure"></button>
+          </div>
+          <div class="fila-seients">
+            <span class="fila-seients__lletra"></span>
+            <button class="seient" type="button" aria-label="L1 lliure"></button>
+            <button class="seient" type="button" aria-label="L2 lliure"></button>
+            <button class="seient" type="button" aria-label="L3 lliure"></button>
+            <button class="seient" type="button" aria-label="L4 lliure"></button>
+            <button class="seient" type="button" aria-label="L5 lliure"></button>
+            <button class="seient" type="button" aria-label="L6 lliure"></button>
+            <button class="seient" type="button" aria-label="L7 lliure"></button>
+            <button class="seient" type="button" aria-label="L8 lliure"></button>
+            <span class="passadis"></span>
+            <button class="seient" type="button" aria-label="L9 lliure"></button>
+            <button class="seient" type="button" aria-label="L10 lliure"></button>
+            <button class="seient" type="button" aria-label="L11 lliure"></button>
+            <button class="seient" type="button" aria-label="L12 lliure"></button>
+            <button class="seient seient--ocupat" type="button" aria-label="L13 ocupat" disabled><img src="img/seat-occupied.svg" width="16" height="16" alt=""></button>
+            <button class="seient" type="button" aria-label="L14 lliure"></button>
+            <button class="seient" type="button" aria-label="L15 lliure"></button>
+            <button class="seient" type="button" aria-label="L16 lliure"></button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="llegenda">
+        <li class="llegenda__item"><span class="seient"></span> Lliure</li>
+        <li class="llegenda__item"><span class="seient seient--seleccionat"><img src="img/seat-selected.svg" width="16" height="16" alt=""></span> Seleccionat</li>
+        <li class="llegenda__item"><span class="seient seient--ocupat"><img src="img/seat-occupied.svg" width="16" height="16" alt=""></span> Ocupat</li>
+        <li class="llegenda__item"><span class="seient seient--vip"><img src="img/seat-vip.svg" width="16" height="16" alt=""></span> VIP</li>
+        <li class="llegenda__item"><span class="seient seient--adaptat"><img src="img/seat-adapted.svg" width="16" height="16" alt=""></span> Adaptat</li>
+      </ul>
+    </div>
+
+    <aside class="panell panell--360">
+      <h2 class="h3">Resum de la reserva</h2>
+      <p class="text">Sessió: dissabte 18:30 · Sala 3</p>
+      <p class="text">Seients seleccionats: 2 (A6, A7)</p>
+      <p class="destacat">Import total: 17,00 €</p>
+      <a class="btn btn--primari btn--bloc" href="post-seleccio.html">Continua</a>
+      <a class="btn btn--secundari btn--bloc" href="seients.html">Buida la selecció</a>
+    </aside>
+  </main>
+
+  <footer class="peu">
+    <span class="peu__copy">© 2026 CineReserva</span>
+    <nav class="peu__enllacos" aria-label="Enllaços legals">
+      <a href="#">Avís legal</a>
+      <a href="#">Privacitat</a>
+      <a href="#">Contacte</a>
+    </nav>
+  </footer>
+</body>
+</html>

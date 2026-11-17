@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineReserva | Gestió de sessions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- P-11 Modificació de sessions · escriptori -->
+  <header class="capcalera capcalera--admin">
+    <div class="capcalera__esquerra">
+      <a class="logo" href="admin-perfil.html" aria-label="CineReserva, tauler d'administració">
+        <img src="img/icon-clapperboard.svg" width="24" height="24" alt="">
+        <span class="logo__text">CineReserva</span>
+        <span class="etiqueta-admin">ADMIN</span>
+      </a>
+      <nav class="nav" aria-label="Navegació d'administració">
+        <a href="admin-perfil.html">Tauler</a>
+        <a href="admin-cartellera.html">Pel·lícules</a>
+        <a href="admin-sessions.html" aria-current="page">Sessions</a>
+        <a href="admin-sessions.html">Sales</a>
+        <a href="admin-usuaris.html">Usuaris i reserves</a>
+      </nav>
+    </div>
+    <div class="usuari">
+      <a class="avatar" href="admin-perfil.html" aria-label="Perfil d'administrador"><img src="img/icon-user.svg" width="20" height="20" alt=""></a>
+      <a class="usuari__nom" href="admin-perfil.html">Administrador</a>
+      <a class="tanca-sessio" href="index.html"><img src="img/icon-log-out.svg" width="16" height="16" alt=""> Tanca sessió</a>
+    </div>
+  </header>
+
+  <main class="contingut dues-columnes">
+    <div class="principal pila gap-24">
+      <h1 class="h1">Gestió de sessions</h1>
+      <form class="fila amplada-total" style="align-items: flex-end;" action="admin-sessions.html" role="search">
+        <label class="camp" style="width: 220px;">
+          <span class="camp__etiqueta">Pel·lícula</span>
+          <span class="camp__control"><input type="search" name="q" placeholder="Cerca pel·lícula"></span>
+        </label>
+        <label class="camp" style="width: 180px;">
+          <span class="camp__etiqueta">Sala</span>
+          <span class="camp__control">
+            <select name="sala"><option value="">Totes les sales</option><option>Sala 1</option><option>Sala 2</option><option>Sala 3</option></select>
+            <img class="camp__icona" src="img/icon-chevron-down.svg" width="20" height="20" alt="">
+          </span>
+        </label>
+        <label class="camp" style="width: 170px;">
+          <span class="camp__etiqueta">Data</span>
+          <span class="camp__control">
+            <input type="text" name="data" placeholder="dd/mm/aaaa">
+            <img class="camp__icona" src="img/icon-calendar.svg" width="20" height="20" alt="">
+          </span>
+        </label>
+        <a class="btn btn--primari" href="#edita-sessio">+ Nova sessió</a>
+      </form>
+
+      <div class="taula-wrapper amplada-total">
+        <table class="taula">
+          <thead>
+            <tr><th style="width:190px">Pel·lícula</th><th style="width:80px">Sala</th><th style="width:110px">Data</th><th style="width:70px">Hora</th><th style="width:70px">Places</th><th style="width:100px">Estat</th><th>Accions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>El darrer projeccionista</td><td>Sala 3</td><td>31/10/2026</td><td>18:30</td><td>12</td><td class="estat-activa">Activa</td>
+              <td><span class="accions"><a class="enllac" href="#edita-sessio">Edita</a><a class="enllac-perill" href="admin-sessions.html">Esborra</a></span></td></tr>
+            <tr><td>Ombres de Montjuïc</td><td>Sala 1</td><td>31/10/2026</td><td>20:00</td><td>0</td><td class="estat-cancellada">Esgotada</td>
+              <td><span class="accions"><a class="enllac" href="#edita-sessio">Edita</a><a class="enllac-perill" href="admin-sessions.html">Esborra</a></span></td></tr>
+            <tr><td>Llum de tardor</td><td>Sala 2</td><td>01/11/2026</td><td>17:15</td><td>40</td><td class="estat-activa">Activa</td>
+              <td><span class="accions"><a class="enllac" href="#edita-sessio">Edita</a><a class="enllac-perill" href="admin-sessions.html">Esborra</a></span></td></tr>
+            <tr><td>El darrer projeccionista</td><td>Sala 3</td><td>01/11/2026</td><td>19:45</td><td>33</td><td class="estat-activa">Activa</td>
+              <td><span class="accions"><a class="enllac" href="#edita-sessio">Edita</a><a class="enllac-perill" href="admin-sessions.html">Esborra</a></span></td></tr>
+          </tbody>
+        </table>
+      </div>
+        <nav class="paginacio" aria-label="Paginació">
+          <span class="petit">Mostrant 1–4 de 28 sessions</span>
+          <div class="paginacio__pagines">
+            <a href="admin-sessions.html" aria-label="Pàgina anterior"><img src="img/icon-chevron-left.svg" width="18" height="18" alt=""></a>
+            <a href="admin-sessions.html" aria-current="page">1</a>
+            <a href="admin-sessions.html">2</a>
+            <a href="admin-sessions.html">3</a>
+            <a href="admin-sessions.html" aria-label="Pàgina següent"><img src="img/icon-chevron-right.svg" width="18" height="18" alt=""></a>
+          </div>
+        </nav>
+    </div>
+
+    <form class="panell panell--400" id="edita-sessio" style="gap: 16px;" action="admin-sessions.html">
+      <h2 class="h3">Edita la sessió</h2>
+      <label class="camp">
+        <span class="camp__etiqueta">Pel·lícula</span>
+        <span class="camp__control">
+          <select name="pellicula"><option>El darrer projeccionista</option><option>Ombres de Montjuïc</option><option>Llum de tardor</option></select>
+          <img class="camp__icona" src="img/icon-chevron-down.svg" width="20" height="20" alt="">
+        </span>
+      </label>
+      <label class="camp">
+        <span class="camp__etiqueta">Sala</span>
+        <span class="camp__control">
+          <select name="sala"><option>Sala 3</option><option>Sala 1</option><option>Sala 2</option></select>
+          <img class="camp__icona" src="img/icon-chevron-down.svg" width="20" height="20" alt="">
+        </span>
+      </label>
+      <div class="fila amplada-total">
+        <label class="camp creix">
+          <span class="camp__etiqueta">Data</span>
+          <span class="camp__control">
+            <input type="text" name="data" placeholder="31/10/2026">
+            <img class="camp__icona" src="img/icon-calendar.svg" width="20" height="20" alt="">
+          </span>
+        </label>
+        <label class="camp creix">
+          <span class="camp__etiqueta">Hora</span>
+          <span class="camp__control"><input type="text" name="hora" placeholder="19:45"></span>
+        </label>
+      </div>
+      <label class="camp">
+        <span class="camp__etiqueta">Preu</span>
+        <span class="camp__control"><input type="text" name="preu" placeholder="8,50 €"></span>
+      </label>
+      <div class="alerta alerta--error" role="alert">
+        <img src="img/icon-alert.svg" width="24" height="24" alt="">
+        <div class="alerta__text">
+          <strong>Sala ocupada</strong>
+          <p>La sala 3 ja té una sessió a aquesta hora (19:45–21:30).</p>
+        </div>
+      </div>
+      <div class="fila fila--12">
+        <button class="btn btn--primari" type="submit">Desa</button>
+        <a class="btn btn--secundari" href="admin-sessions.html">Cancel·la</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="peu">
+    <span class="peu__copy">© 2026 CineReserva</span>
+    <nav class="peu__enllacos" aria-label="Enllaços legals">
+      <a href="#">Avís legal</a>
+      <a href="#">Privacitat</a>
+      <a href="#">Contacte</a>
+    </nav>
+  </footer>
+</body>
+</html>

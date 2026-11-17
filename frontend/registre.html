@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineReserva | Registre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- P-05 Registre · escriptori -->
+  <header class="capcalera">
+    <div class="capcalera__esquerra">
+      <a class="logo" href="index.html" aria-label="CineReserva, inici">
+        <img src="img/icon-clapperboard.svg" width="24" height="24" alt="">
+        <span class="logo__text">CineReserva</span>
+      </a>
+      <nav class="nav" aria-label="Navegació principal">
+        <a href="index.html">Inici</a>
+        <a href="cartellera.html">Cartellera</a>
+      </nav>
+    </div>
+    <div class="capcalera__accions">
+      <a class="btn btn--secundari" href="login.html">Inicia sessió</a>
+      <a class="btn btn--primari" href="registre.html">Registra't</a>
+    </div>
+  </header>
+
+  <main class="zona-centrada">
+    <form class="targeta-auth targeta-auth--600" action="verificacio-correu.html">
+      <h1 class="h1">Crea el teu compte</h1>
+      <div class="fila amplada-total">
+        <label class="camp creix">
+          <span class="camp__etiqueta">Nom</span>
+          <span class="camp__control"><input type="text" name="nom" placeholder="Nom" required></span>
+        </label>
+        <label class="camp creix">
+          <span class="camp__etiqueta">Cognoms</span>
+          <span class="camp__control"><input type="text" name="cognoms" placeholder="Cognoms" required></span>
+        </label>
+      </div>
+      <label class="camp">
+        <span class="camp__etiqueta">Correu electrònic</span>
+        <span class="camp__control"><input type="email" name="correu" placeholder="exemple@correu.cat" required></span>
+      </label>
+      <label class="camp">
+        <span class="camp__etiqueta">Contrasenya</span>
+        <span class="camp__control">
+          <input type="password" name="contrasenya" placeholder="••••••••" required>
+          <img class="camp__icona" src="img/icon-eye.svg" width="20" height="20" alt="">
+        </span>
+      </label>
+      <label class="camp">
+        <span class="camp__etiqueta">Repeteix la contrasenya</span>
+        <span class="camp__control">
+          <input type="password" name="contrasenya2" placeholder="••••••••" required>
+          <img class="camp__icona" src="img/icon-eye.svg" width="20" height="20" alt="">
+        </span>
+      </label>
+      <label class="casella"><input type="checkbox" name="condicions" required> Accepto les condicions d'ús i la política de privacitat</label>
+      <button class="btn btn--primari btn--bloc" type="submit">Crea el compte</button>
+      <p class="text-amb-enllac">Ja tens compte? <a class="enllac" href="login.html">Inicia sessió</a></p>
+    </form>
+  </main>
+
+  <footer class="peu">
+    <span class="peu__copy">© 2026 CineReserva</span>
+    <nav class="peu__enllacos" aria-label="Enllaços legals">
+      <a href="#">Avís legal</a>
+      <a href="#">Privacitat</a>
+      <a href="#">Contacte</a>
+    </nav>
+  </footer>
+</body>
+</html>

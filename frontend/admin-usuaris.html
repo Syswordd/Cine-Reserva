@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineReserva | Usuaris i reserves</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- P-13 Gestió d'usuaris i reserves · escriptori -->
+  <header class="capcalera capcalera--admin">
+    <div class="capcalera__esquerra">
+      <a class="logo" href="admin-perfil.html" aria-label="CineReserva, tauler d'administració">
+        <img src="img/icon-clapperboard.svg" width="24" height="24" alt="">
+        <span class="logo__text">CineReserva</span>
+        <span class="etiqueta-admin">ADMIN</span>
+      </a>
+      <nav class="nav" aria-label="Navegació d'administració">
+        <a href="admin-perfil.html">Tauler</a>
+        <a href="admin-cartellera.html">Pel·lícules</a>
+        <a href="admin-sessions.html">Sessions</a>
+        <a href="admin-sessions.html">Sales</a>
+        <a href="admin-usuaris.html" aria-current="page">Usuaris i reserves</a>
+      </nav>
+    </div>
+    <div class="usuari">
+      <a class="avatar" href="admin-perfil.html" aria-label="Perfil d'administrador"><img src="img/icon-user.svg" width="20" height="20" alt=""></a>
+      <a class="usuari__nom" href="admin-perfil.html">Administrador</a>
+      <a class="tanca-sessio" href="index.html"><img src="img/icon-log-out.svg" width="16" height="16" alt=""> Tanca sessió</a>
+    </div>
+  </header>
+
+  <main class="contingut pila gap-32">
+    <h1 class="h1">Usuaris i reserves</h1>
+    <div class="pestanyes">
+      <a class="btn btn--primari" href="admin-usuaris.html">Usuaris</a>
+      <a class="btn btn--secundari" href="admin-usuaris.html">Reserves</a>
+    </div>
+    <form class="fila amplada-total" style="align-items: flex-end;" action="admin-usuaris.html" role="search">
+      <label class="camp" style="width: 280px;">
+        <span class="camp__etiqueta">Cerca</span>
+        <span class="camp__control"><input type="search" name="q" placeholder="Nom o correu"></span>
+      </label>
+      <label class="camp" style="width: 200px;">
+        <span class="camp__etiqueta">Rol</span>
+        <span class="camp__control">
+          <select name="rol"><option value="">Tots els rols</option><option>Usuari</option><option>Administrador</option></select>
+          <img class="camp__icona" src="img/icon-chevron-down.svg" width="20" height="20" alt="">
+        </span>
+      </label>
+      <a class="btn btn--secundari" href="admin-usuaris.html">Exporta CSV</a>
+    </form>
+
+    <div class="taula-wrapper amplada-total">
+      <table class="taula">
+        <thead>
+          <tr><th style="width:220px">Nom</th><th style="width:280px">Correu</th><th style="width:170px">Rol</th><th style="width:140px">Estat</th><th style="width:120px">Reserves</th><th>Accions</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ian Membrive</td><td>ian@exemple.cat</td><td>Usuari</td><td class="estat-activa">Activa</td><td>4</td>
+            <td><span class="accions"><a class="enllac" href="admin-usuaris.html">Edita</a><a class="enllac-perill" href="admin-usuaris.html">Desactiva</a></span></td></tr>
+          <tr><td>Joan Serra</td><td>joan@exemple.cat</td><td>Usuari</td><td class="estat-cancellada">Bloquejat</td><td>0</td>
+            <td><span class="accions"><a class="enllac" href="admin-usuaris.html">Edita</a><a class="enllac" href="admin-usuaris.html">Desbloqueja</a></span></td></tr>
+          <tr><td>Admin Principal</td><td>admin@exemple.cat</td><td>Administrador</td><td class="estat-activa">Activa</td><td>0</td>
+            <td><span class="accions"><a class="enllac" href="admin-perfil.html">Edita</a></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+        <nav class="paginacio" aria-label="Paginació">
+          <span class="petit">Mostrant 1–3 de 120 usuaris</span>
+          <div class="paginacio__pagines">
+            <a href="admin-usuaris.html" aria-label="Pàgina anterior"><img src="img/icon-chevron-left.svg" width="18" height="18" alt=""></a>
+            <a href="admin-usuaris.html" aria-current="page">1</a>
+            <a href="admin-usuaris.html">2</a>
+            <a href="admin-usuaris.html">3</a>
+            <a href="admin-usuaris.html" aria-label="Pàgina següent"><img src="img/icon-chevron-right.svg" width="18" height="18" alt=""></a>
+          </div>
+        </nav>
+  </main>
+
+  <footer class="peu">
+    <span class="peu__copy">© 2026 CineReserva</span>
+    <nav class="peu__enllacos" aria-label="Enllaços legals">
+      <a href="#">Avís legal</a>
+      <a href="#">Privacitat</a>
+      <a href="#">Contacte</a>
+    </nav>
+  </footer>
+</body>
+</html>

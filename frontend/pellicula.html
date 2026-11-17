@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineReserva | El darrer projeccionista</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- P-09 Pel·lícula individual · escriptori -->
+  <header class="capcalera">
+    <div class="capcalera__esquerra">
+      <a class="logo" href="index.html" aria-label="CineReserva, inici">
+        <img src="img/icon-clapperboard.svg" width="24" height="24" alt="">
+        <span class="logo__text">CineReserva</span>
+      </a>
+      <nav class="nav" aria-label="Navegació principal">
+        <a href="index.html">Inici</a>
+        <a href="cartellera.html" aria-current="page">Cartellera</a>
+      </nav>
+    </div>
+    <div class="capcalera__accions">
+      <a class="btn btn--secundari" href="login.html">Inicia sessió</a>
+      <a class="btn btn--primari" href="registre.html">Registra't</a>
+    </div>
+  </header>
+
+  <main class="contingut pila gap-32">
+    <nav class="breadcrumb" aria-label="Ruta de navegació"><a href="cartellera.html">Cartellera</a> &gt; El darrer projeccionista</nav>
+    <div class="dues-columnes">
+      <div class="cartell-gran" role="img" aria-label="Cartell de la pel·lícula"></div>
+      <div class="principal pila gap-16">
+        <h1 class="h1">El darrer projeccionista</h1>
+        <p class="petit">Durada: 118 min · Gènere: Drama · Classificació: +12 · Idioma: VOSE</p>
+        <h2 class="h3">Sinopsi</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <h2 class="h3">Sessions</h2>
+        <div class="pestanyes">
+          <a class="btn btn--primari" href="pellicula.html">Dissabte 31/10</a>
+          <a class="btn btn--secundari" href="pellicula.html">Diumenge 01/11</a>
+          <a class="btn btn--secundari" href="pellicula.html">Dilluns 02/11</a>
+        </div>
+        <div class="taula-wrapper amplada-total">
+          <table class="taula">
+            <thead>
+              <tr><th style="width:90px">Hora</th><th style="width:110px">Sala</th><th style="width:120px">Format</th><th style="width:140px">Places lliures</th><th style="width:100px">Preu</th><th>Acció</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>16:00</td><td>Sala 1</td><td>2D</td><td>34</td><td>8,00 €</td><td><a class="enllac" href="seients.html">Reserva</a></td></tr>
+              <tr><td>18:30</td><td>Sala 3</td><td>2D VOSE</td><td>12</td><td>8,50 €</td><td><a class="enllac" href="seients.html">Reserva</a></td></tr>
+              <tr><td>21:15</td><td>Sala 2</td><td>3D</td><td>0</td><td>9,00 €</td><td class="estat-esgotada">Esgotada</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="peu">
+    <span class="peu__copy">© 2026 CineReserva</span>
+    <nav class="peu__enllacos" aria-label="Enllaços legals">
+      <a href="#">Avís legal</a>
+      <a href="#">Privacitat</a>
+      <a href="#">Contacte</a>
+    </nav>
+  </footer>
+</body>
+</html>

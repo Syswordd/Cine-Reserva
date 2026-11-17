@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineReserva | Cartellera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- P-02 Cartellera · escriptori -->
+  <header class="capcalera">
+    <div class="capcalera__esquerra">
+      <a class="logo" href="index.html" aria-label="CineReserva, inici">
+        <img src="img/icon-clapperboard.svg" width="24" height="24" alt="">
+        <span class="logo__text">CineReserva</span>
+      </a>
+      <nav class="nav" aria-label="Navegació principal">
+        <a href="index.html">Inici</a>
+        <a href="cartellera.html" aria-current="page">Cartellera</a>
+      </nav>
+    </div>
+    <div class="capcalera__accions">
+      <a class="btn btn--secundari" href="login.html">Inicia sessió</a>
+      <a class="btn btn--primari" href="registre.html">Registra't</a>
+    </div>
+  </header>
+
+  <main class="contingut--48 pila gap-32">
+    <h1 class="h1">Cartellera</h1>
+
+    <form class="fila" style="align-items: flex-end;" action="cartellera.html" role="search">
+      <label class="camp" style="width: 360px;">
+        <span class="camp__etiqueta">Cerca</span>
+        <span class="camp__control"><input type="search" name="q" placeholder="Cerca pel·lícula"></span>
+      </label>
+      <label class="camp" style="width: 240px;">
+        <span class="camp__etiqueta">Gènere</span>
+        <span class="camp__control">
+          <select name="genere">
+            <option value="">Tots els gèneres</option>
+            <option>Drama</option>
+            <option>Thriller</option>
+            <option>Animació</option>
+            <option>Romàntica</option>
+          </select>
+          <img class="camp__icona" src="img/icon-chevron-down.svg" width="20" height="20" alt="">
+        </span>
+      </label>
+      <label class="camp" style="width: 200px;">
+        <span class="camp__etiqueta">Data</span>
+        <span class="camp__control">
+          <input type="text" name="data" placeholder="dd/mm/aaaa" inputmode="numeric">
+          <img class="camp__icona" src="img/icon-calendar.svg" width="20" height="20" alt="">
+        </span>
+      </label>
+      <label class="casella" style="padding: 12px 0;">
+        <input type="checkbox" name="avui"> Només amb sessions avui
+      </label>
+    </form>
+
+    <div class="graella-pellicules">
+      <article class="targeta-pellicula">
+        <div class="targeta-pellicula__cartell"><img src="img/icon-image.svg" width="48" height="48" alt=""></div>
+        <div class="targeta-pellicula__contingut">
+          <h3 class="h3">El darrer projeccionista</h3>
+          <div class="metadades"><span class="petit">118 min · Drama</span><span class="edat">+12</span></div>
+          <a class="btn btn--secundari btn--bloc" href="pellicula.html">Veure sessions</a>
+        </div>
+      </article>
+      <article class="targeta-pellicula">
+        <div class="targeta-pellicula__cartell"><img src="img/icon-image.svg" width="48" height="48" alt=""></div>
+        <div class="targeta-pellicula__contingut">
+          <h3 class="h3">Ombres de Montjuïc</h3>
+          <div class="metadades"><span class="petit">104 min · Thriller</span><span class="edat">+16</span></div>
+          <a class="btn btn--secundari btn--bloc" href="pellicula.html">Veure sessions</a>
+        </div>
+      </article>
+      <article class="targeta-pellicula">
+        <div class="targeta-pellicula__cartell"><img src="img/icon-image.svg" width="48" height="48" alt=""></div>
+        <div class="targeta-pellicula__contingut">
+          <h3 class="h3">La gran fuga del gat</h3>
+          <div class="metadades"><span class="petit">92 min · Animació</span><span class="edat">TP</span></div>
+          <a class="btn btn--secundari btn--bloc" href="pellicula.html">Veure sessions</a>
+        </div>
+      </article>
+      <article class="targeta-pellicula">
+        <div class="targeta-pellicula__cartell"><img src="img/icon-image.svg" width="48" height="48" alt=""></div>
+        <div class="targeta-pellicula__contingut">
+          <h3 class="h3">Llum de tardor</h3>
+          <div class="metadades"><span class="petit">126 min · Romàntica</span><span class="edat">+7</span></div>
+          <a class="btn btn--secundari btn--bloc" href="pellicula.html">Veure sessions</a>
+        </div>
+      </article>
+    </div>
+
+    <nav class="paginacio" aria-label="Paginació">
+      <span class="petit">Mostrant 1–4 de 50 pel·lícules</span>
+      <div class="paginacio__pagines">
+        <a href="cartellera.html" aria-label="Pàgina anterior"><img src="img/icon-chevron-left.svg" width="18" height="18" alt=""></a>
+        <a href="cartellera.html" aria-current="page">1</a>
+        <a href="cartellera.html">2</a>
+        <a href="cartellera.html">3</a>
+        <a href="cartellera.html" aria-label="Pàgina següent"><img src="img/icon-chevron-right.svg" width="18" height="18" alt=""></a>
+      </div>
+    </nav>
+  </main>
+
+  <footer class="peu">
+    <span class="peu__copy">© 2026 CineReserva</span>
+    <nav class="peu__enllacos" aria-label="Enllaços legals">
+      <a href="#">Avís legal</a>
+      <a href="#">Privacitat</a>
+      <a href="#">Contacte</a>
+    </nav>
+  </footer>
+</body>
+</html>

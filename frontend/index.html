@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineReserva | Inici</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- P-01 Inici de la pàgina · escriptori -->
+  <header class="capcalera">
+    <div class="capcalera__esquerra">
+      <a class="logo" href="index.html" aria-label="CineReserva, inici">
+        <img src="img/icon-clapperboard.svg" width="24" height="24" alt="">
+        <span class="logo__text">CineReserva</span>
+      </a>
+      <nav class="nav" aria-label="Navegació principal">
+        <a href="index.html" aria-current="page">Inici</a>
+        <a href="cartellera.html">Cartellera</a>
+      </nav>
+    </div>
+    <div class="capcalera__accions">
+      <a class="btn btn--secundari" href="login.html">Inicia sessió</a>
+      <a class="btn btn--primari" href="registre.html">Registra't</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="h1">Estrenes aquesta setmana</h1>
+      <p class="text">Reserva les teves entrades en tres passos, sense cues.</p>
+      <div class="hero__accions">
+        <a class="btn btn--primari" href="cartellera.html">Veure cartellera</a>
+        <a class="btn btn--secundari" href="registre.html">Crea un compte</a>
+      </div>
+    </section>
+
+    <section class="contingut--48 pila gap-24">
+      <h2 class="h2">Pel·lícules destacades</h2>
+      <div class="graella-pellicules">
+        <article class="targeta-pellicula">
+          <div class="targeta-pellicula__cartell"><img src="img/icon-image.svg" width="48" height="48" alt=""></div>
+          <div class="targeta-pellicula__contingut">
+            <h3 class="h3">Avengers: Doomsday</h3>
+            <div class="metadades"><span class="petit">118 min · Drama</span><span class="edat">+12</span></div>
+            <a class="btn btn--secundari btn--bloc" href="pellicula.html">Veure sessions</a>
+          </div>
+        </article>
+        <article class="targeta-pellicula">
+          <div class="targeta-pellicula__cartell"><img src="img/icon-image.svg" width="48" height="48" alt=""></div>
+          <div class="targeta-pellicula__contingut">
+            <h3 class="h3">The Crush</h3>
+            <div class="metadades"><span class="petit">104 min · Thriller</span><span class="edat">TP</span></div>
+            <a class="btn btn--secundari btn--bloc" href="pellicula.html">Veure sessions</a>
+          </div>
+        </article>
+        <article class="targeta-pellicula">
+          <div class="targeta-pellicula__cartell"><img src="img/icon-image.svg" width="48" height="48" alt=""></div>
+          <div class="targeta-pellicula__contingut">
+            <h3 class="h3">Fear 1996</h3>
+            <div class="metadades"><span class="petit">92 min · Animació</span><span class="edat">+16</span></div>
+            <a class="btn btn--secundari btn--bloc" href="pellicula.html">Veure sessions</a>
+          </div>
+        </article>
+        <article class="targeta-pellicula">
+          <div class="targeta-pellicula__cartell"><img src="img/icon-image.svg" width="48" height="48" alt=""></div>
+          <div class="targeta-pellicula__contingut">
+            <h3 class="h3">American psycho</h3>
+            <div class="metadades"><span class="petit">126 min · Romàntica</span><span class="edat">+18</span></div>
+            <a class="btn btn--secundari btn--bloc" href="pellicula.html">Veure sessions</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="peu">
+    <span class="peu__copy">© 2026 CineReserva</span>
+    <nav class="peu__enllacos" aria-label="Enllaços legals">
+      <a href="#">Avís legal</a>
+      <a href="#">Privacitat</a>
+      <a href="#">Contacte</a>
+    </nav>
+  </footer>
+</body>
+</html>
